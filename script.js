@@ -1,3 +1,8 @@
+let input= document.getElementsByClassName("decimal")
+let btn=document.getElementsByClassName("btn")
+let output= document.getElementsByClassName("output")
+
+
 function decimalToBinary(num) {
   //Write you code here
 	let bValue=""
@@ -7,7 +12,8 @@ function decimalToBinary(num) {
 		  bValue=rem+bValue
 		  num=parseInt(num/2)
 	  }
-	return bValue
+	output[0].innerText=bValue
 }
+btn[0].addEventListener("click",()=>decimalToBinary(input[0].value))
 
-window.decimalToBinary = decimalToBinary;
+// window.decimalToBinary = decimalToBinary;
