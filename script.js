@@ -1,6 +1,6 @@
 let input= document.getElementsByClassName("decimal")
 let btn=document.getElementsByClassName("btn")
-let output= document.getElementsByClassName("output")
+let output= document.getElementsByClassName("binary")
 
 
 function decimalToBinary(num) {
