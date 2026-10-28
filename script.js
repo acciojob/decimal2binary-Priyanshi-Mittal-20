@@ -3,9 +3,9 @@ function decimalToBinary(num) {
 	let bValue=""
   while(num>0)
 	  {
-		  let rem=Math.parse(num%2)
-		  bValue+=rem
-		  num=Math.parse(num/2)
+		  let rem=parseInt(num%2)
+		  bValue=rem+bValue
+		  num=parseInt(num/2)
 	  }
 	return bValue
 }
